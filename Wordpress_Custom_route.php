@@ -83,7 +83,7 @@ class Custom_Route {
 					return $template;
 				}
 			}
-				return  plugin_dir_path( dirname( __FILE__ ) ) . $this->route_path;
+				return  get_template_directory() . $this->route_path;
     }
 
 
