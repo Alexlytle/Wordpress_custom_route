@@ -5,7 +5,7 @@ class Custom_Route {
 
 /**
  *  How to use:
- *  Require this class from themes function.php file
+ *  Require this in functions.php file
  *  Create a new instance of this class:
  *
  *  Argument 1: Url file path
