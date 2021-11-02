@@ -77,12 +77,7 @@ class Custom_Route {
 
     public function add_custom_template_include($template)
     {
-			$url =  $_SERVER['REQUEST_URI'];
-
-			if(in_array($this->route_name,explode('/',$url))){
-
-				return  get_template_directory() . $this->route_path;
-			}
+			
 			
 	
 			foreach ($this->query_name_array as $value) {
