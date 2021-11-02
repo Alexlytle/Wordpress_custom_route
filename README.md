@@ -27,9 +27,7 @@ new Custom_Route('my-unique-route/(.+?)/(.+?)/?$',array('param_1','param_2'),'/p
 
  <br>
  
-Example with 0 params:<br>
 
-new Custom_Route('my-unique-route',array(''),'/public/path_to_template_file.php',true);
 
  <br> 
 Template File:<br>
