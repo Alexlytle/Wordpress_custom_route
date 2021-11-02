@@ -18,18 +18,18 @@ Argument 4: Boolean. True will rebuild the permalink structure. Recomend not to 
  <br>
 Example with 2 params:<br>
 
-new Custom_Route('my-unique-route/(.+?)/(.+?)/?$',array('param_1','param_2'),'public/path_to_template_file.php',true);
+new Custom_Route('my-unique-route/(.+?)/(.+?)/?$',array('param_1','param_2'),'/public/path_to_template_file.php',true);
 
  <br>
 Example with 1 params:<br>
 
-new Custom_Route('my-unique-route/(.+?)/(.+?)/?$',array('param_1','param_2'),'public/path_to_template_file.php',true);
+new Custom_Route('my-unique-route/(.+?)/(.+?)/?$',array('param_1','param_2'),'/public/path_to_template_file.php',true);
 
  <br>
  
 Example with 0 params:<br>
 
-new Custom_Route('my-unique-route',array(''),'public/path_to_template_file.php',true);
+new Custom_Route('my-unique-route',array(''),'/public/path_to_template_file.php',true);
 
  <br> 
 Template File:<br>
