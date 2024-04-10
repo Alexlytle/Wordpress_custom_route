@@ -20,17 +20,17 @@ class Custom_Route {
  *  To get the value of query variable just echo get_query_var('param_1');
  * 
 */
-	public $route_name;
+    public $route_name;
 
-	public $query_name;
+     public $query_name;
 
-	public $route_path;
+     public $route_path;
 	
-	public $params;
+     public $params;
 
-	public $forch_flush;
+     public $forch_flush;
 
-	public function __construct($route_name,$query_name,$route_path,$forch_flush) 
+     public function __construct($route_name,$query_name,$route_path,$forch_flush) 
 	{
 
 		$this->route_name = $route_name;
@@ -52,13 +52,13 @@ class Custom_Route {
 
     public function add_custom_rewrite()
     {
-	$str = '';
-	$keys=1;
-	   foreach ($this->query_name_array  as $value) {
-		   $str .= $value .'=$matches['.$keys.']&';
-		   $keys++;
-	   }
-	add_rewrite_rule( $this->route_name , 'index.php?'. $str , 'top' );
+		$str = '';
+		$keys=1;
+		   foreach ($this->query_name_array  as $value) {
+			   $str .= $value .'=$matches['.$keys.']&';
+			   $keys++;
+		   }
+		add_rewrite_rule( $this->route_name , 'index.php?'. $str , 'top' );
     }
 
 
